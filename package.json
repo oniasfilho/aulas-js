@@ -1,0 +1,9 @@
+{
+  "name": "aulas-js",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Projeto utilizado para ensinar JS para minha maninha, se seu nome não é Joyce Rocha sai daqui <3",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
