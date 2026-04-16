@@ -24,6 +24,14 @@ resultado = soma(5, 5);
 
 console.log(resultado);
 
+// DAILY EXERCISE (16/04)
+// - USE RETURN IN ALL METHODS
+// - USE VARIABLES TO STORE METHOD'S RETURN VALUES
+// - USE DEBUGGER
+//  - COMO FUNCIONA DEBUGGER NUMA APP IGUAL ESSAS
+//  - COMO USAR NO VSCODE
+//  - COMO OBSERVAR UMA VARIÁVEL
+
 let studentName;
 let studentAge;
 let profAge = 31
