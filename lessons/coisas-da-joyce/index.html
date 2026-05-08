@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Família Caos Crud</title>
+  </head>
+  <body>
+    <h1>Família Caos</h1>
+      <h2>Incluir Pessoa</h2>
+    <form id="form-cadastro">
+<input type="text" id="nome" name="nome" placeholder="Nome" required />
+<input type="number" id="idade" name="idade" placeholder="Idade" required />
+<input type="text" id="cidade" name="cidade" placeholder="Cidade" required />
+  <label for="tem_pet">Tem pet?</label>
+<select name="tem_pet" id="tem_pet" required>
+    <option value="" disabled selected>Selecione...</option>
+    <option value="sim">Sim</option>
+    <option value="nao">Não</option>
+</select>
+    <button type="submit">Adicionar</button>
+</form>
+<section>
+
+  <h2>Filtros</h2>
+  <select id="filtro-tipo">
+    <option value="">Filtrar por...</option>
+    <option value="cidade">Cidade</option>
+    <option value="pet">Pet</option>
+    <option value="qualidade">Qualidade</option>
+  </select>
+</section>
+
+<section>
+  <h2>Lista da Família</h2>
+  <div id="lista-familia"></div>
+</section>
+    
+   <script src="index.js"></script>
+  </body>
+</html>
