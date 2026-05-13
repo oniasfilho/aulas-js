@@ -1,0 +1,38 @@
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+.title {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product-card {
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-style:ridge;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #999;
+  /* margin: 10px; */
+  
+}
+
+.controls {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.amount {
+  padding: 0 10px;
+}
