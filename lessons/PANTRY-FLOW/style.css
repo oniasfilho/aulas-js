@@ -2,6 +2,7 @@ body {
   background-color: #f4f4f4;
   margin: 0;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 .title {
   display: flex;
@@ -23,14 +24,12 @@ main {
   border-radius: 10px;
   box-shadow: 2px 2px 8px #999;
   /* margin: 10px; */
-  
 }
 
 .controls {
   display:flex;
   justify-content: space-around;
   align-items: center;
-  
 }
 
 .amount {

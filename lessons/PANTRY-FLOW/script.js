@@ -1,19 +1,27 @@
-let number = document.querySelector(".amount");
-// AUMENTAR
-let btnPlus = document.querySelector(".btn-plus");
-btnPlus.addEventListener("click", () => {
+function changeAmount(button, change) {
+  let card = button.closest(".product-card");
+  let number = card.querySelector(".amount");
   let amount = number.textContent;
-  let currentAmount = Number(amount) + 1;
-  number.textContent = currentAmount;
-});
-// DIMINUIR
-let btnMinus = document.querySelector(".btn-minus");
-btnMinus.addEventListener("click", () => {
-  let amount = number.textContent;
-  let currentAmount = Number(amount) - 1;
+  let currentAmount = Number(amount) + change;
   if (currentAmount >= 0) {
     number.textContent = currentAmount;
   } else {
     number.textContent = 0;
   }
+}
+
+// INCREASE
+let btnPlus = document.querySelectorAll(".btn-plus");
+btnPlus.forEach((button) => {
+  button.addEventListener("click", () => {
+    changeAmount(button, 1);
+  });
+});
+
+// DECREASE
+let btnMinus = document.querySelectorAll(".btn-minus");
+btnMinus.forEach((button) => {
+  button.addEventListener("click", () => {
+    changeAmount(button, -1);
+  });
 });
